@@ -62,6 +62,7 @@ TextTheme _buildTextTheme(TextTheme base, Color primaryColor, {bool dark = false
       ),
     ),
 
+//Need to nderstand this 
     // bottom sheet text for confirmations?
     body2: base.body2.copyWith(
       fontSize: em,
