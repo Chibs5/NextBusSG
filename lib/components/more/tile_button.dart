@@ -74,7 +74,7 @@ class TileButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(Values.borderRadius),
         // only set the function if it's given, otherwise execute empty function
         onTap: () {
-          if (onTap != null) onTap();
+ onTap();
         },
       ),
     );

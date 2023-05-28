@@ -21,8 +21,8 @@ class BusServiceProvider extends ChangeNotifier {
   List<BusStop> _busStopsNear = null;
 
   // reload is false by default; it's only true when we need to get new set of nearest bus stops
-  Future<List> getNearestStops(context, {reload: false}) async {
-    if (_busStopsNear != null && !reload) {
+  Future<List> getNearestStops(context, {reload = false}) async {
+    if (!reload) {
       // if busStopsNear is already saved in state, no need to get it again
       return _busStopsNear;
     } else {

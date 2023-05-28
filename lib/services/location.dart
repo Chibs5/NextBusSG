@@ -10,7 +10,7 @@ class LocationServicesProvider extends ChangeNotifier {
   Position _position = null;
 
   // reload is to force get a new location
-  Future<Position> getLocation(BuildContext context, {reload: false}) async {
+  Future<Position> getLocation(BuildContext context, {reload = false}) async {
     if (_position != null && !reload) {
       // Location already there so no need to get it again
       return _position;
